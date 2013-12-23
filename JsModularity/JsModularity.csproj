@@ -73,10 +73,11 @@
     <Content Include="lib\mocha\mocha.js" />
     <Content Include="style.css" />
     <Content Include="tests\00-namespaces.js" />
+    <Content Include="tests\01-scope-and-scope-chain.js" />
     <Content Include="test_sample.html" />
     <Content Include="test.html" />
     <Content Include="tests\Z_array_test_sample.js" />
-    <Content Include="util\namespace.js" />
+    <Content Include="js\namespace.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

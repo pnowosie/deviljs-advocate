@@ -1,4 +1,6 @@
-﻿var namespace = (function() {
+﻿
+
+var namespace = (function () {
 
     var global = window || {},
         namespace;
