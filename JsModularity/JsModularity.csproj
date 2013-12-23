@@ -68,7 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.html" />
+    <Content Include="lib\chai.js" />
+    <Content Include="lib\mocha\mocha.css" />
+    <Content Include="lib\mocha\mocha.js" />
     <Content Include="style.css" />
+    <Content Include="tests\00-namespaces.js" />
+    <Content Include="test_sample.html" />
+    <Content Include="test.html" />
+    <Content Include="tests\Z_array_test_sample.js" />
+    <Content Include="util\namespace.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

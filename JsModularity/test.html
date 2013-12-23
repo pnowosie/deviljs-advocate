@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+    <title>Mocha</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lib/mocha/mocha.css" rel="stylesheet" />
+    <script src="lib/mocha/mocha.js"></script>
+    <script src="lib/chai.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script>
+        expect = chai.expect;
+        should = chai.should();
+    </script>
+    <!-- Module scripts -->
+    <script src="util/namespace.js"></script>
+
+    <!-- Tests scripts -->
+    <script src="tests/00-namespaces.js"></script>
+
+    <script>
+        onload = function () {
+
+            var runner = mocha.run();
+
+            // runner.on('test end', function(test){
+            //   console.log(test.fullTitle());
+            // });
+        };
+    </script>
+</head>
+<body>
+    <div id="mocha"></div>
+</body>
+</html>
