@@ -71,9 +71,12 @@
     <Content Include="lib\chai.js" />
     <Content Include="lib\mocha\mocha.css" />
     <Content Include="lib\mocha\mocha.js" />
+    <Content Include="lib\underscore.js" />
     <Content Include="style.css" />
-    <Content Include="tests\00-namespaces.js" />
+    <Content Include="tests\00-primitive-data-types.js" />
+    <Content Include="tests\02-namespaces.js" />
     <Content Include="tests\01-scope-and-scope-chain.js" />
+    <Content Include="tests\03-function-and-closure.js" />
     <Content Include="test_sample.html" />
     <Content Include="test.html" />
     <Content Include="tests\Z_array_test_sample.js" />

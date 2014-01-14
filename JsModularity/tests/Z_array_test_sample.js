@@ -1,4 +1,5 @@
-describe('Array', function() {
+"use strict";
+describe('Array', function () {
 
     describe('#push()', function() {
 
