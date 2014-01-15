@@ -34,5 +34,19 @@ describe('00. Basic Javascript', function() {
         // a co powiecie o tym?
         "object".should.be.equal(typeof null);    // brrrr!
     });
+    it('There are some values that evaluate to false', function() {
+    // '... and everything else is true. '
+        var falsy = [
+            false,      // of course :)
+            0,          // C-like
+            '',         // empty string
+            null, undefined,
+            NaN
+        ];
 
+        falsy.forEach(function (elt) {
+            //console.dir(elt);
+            false.should.be.equal( !!elt );
+        });
+    });
 });

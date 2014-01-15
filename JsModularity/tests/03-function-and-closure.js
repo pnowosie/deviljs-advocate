@@ -4,6 +4,7 @@
     Funkcje zwracające funkcje i ich własności
     Funkcja czyli instancja obiektu, ile funkcji tu utworzyliśmy?
     Funkcja-konstruktor i jej właściwości
+    Revealing Module Pattern - zalety i wady
  */
 var x = 'global scope';
 var obj = {
@@ -77,8 +78,8 @@ describe('03.1. Function and closure', function() {
             funArr[i] = function () { return i; };
 
         funArr.should.have.length(len);
-        (10).should.be.equal( funArr[0]() );      // Oops!
-        (10).should.be.equal( funArr[9]() );      // as above ;)
+        (0 /*- ? */).should.be.equal( funArr[0]() );      // Oops!
+        (9 /*- ? */).should.be.equal( funArr[9]() );      // as above ;)
 
     });
 
@@ -124,5 +125,36 @@ describe('03.2. Constructor functions', function() {
         var mruczek = new Cat('Ala');
         mruczek.say().should.be.equal('Miał!');
         mruczek.owner.should.be.equal('Ala');
+    });
+
+    it('The Revealing Module Pattern', function() {
+        // let's see somethin interesting
+
+        var config;     // <-- same global configuration
+
+        var RevealingModule = (function(config) {
+
+            var privateVariable = 0;
+            
+            var privateFunc = function() {};
+
+            var setVariable = function(value) {
+                privateVariable = privateFunc(value);
+            };
+            
+            // I. return module object
+            return {                
+                setVariable: setVariable
+            };
+
+            // II. return constructor function
+            var ctor = function(/* ctor parameters */) {
+
+                this.setVariable = setVariable;
+            };
+
+            return ctor;
+
+        })(config);
     });
 });

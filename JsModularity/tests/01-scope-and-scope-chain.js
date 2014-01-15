@@ -55,5 +55,13 @@ describe('01. Scope and scope chain', function () {
             /* some code */
         })();                   // <-- immediate invocation
 
+        /*
+            Po co tworzyć funkcje i wywoływać ją w tym samym miejscu? Czy to nie jest dziwne?
+            Nie. To znany wzorzec JS (IFI)
+
+                1. bo scope - nie zaśmiecamy globalnego, nie nadpisujemy wartości w scope-chain,
+                2. bo closure - o tym za chwilę,
+                3. bo tak :)
+         */
     });
 });
