@@ -78,6 +78,7 @@
     <Content Include="tests\01-scope-and-scope-chain.js" />
     <Content Include="tests\03-function-and-closure.js" />
     <Content Include="tests\04-function-prototype-property.js" />
+    <Content Include="tests\05-inheritance.js" />
     <Content Include="test_sample.html" />
     <Content Include="test.html" />
     <Content Include="tests\Z_array_test_sample.js" />

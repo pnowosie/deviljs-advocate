@@ -31,12 +31,14 @@ describe('01. Scope and scope chain', function () {
 
             x.should.be.equal(9);   //<======== 
                                               //
-            
+            // var a = 0;   // co to zmieni?
             
             a.should.be.equal(1);          //
             b.should.be.equal(2);         //
             should.not.exist(c);         //
             var c = 5;
+
+            // var a = 1;   // co to zmieni?
 
             var inF = 8;              //
         }                            //

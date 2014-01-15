@@ -156,5 +156,10 @@ describe('03.2. Constructor functions', function() {
             return ctor;
 
         })(config);
+        /*
+            Zalety - jeden, kilka obiektów
+            Wady - wiele obiektów
+         */
+
     });
 });
