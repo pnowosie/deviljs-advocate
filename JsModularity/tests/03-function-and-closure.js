@@ -78,8 +78,8 @@ describe('03.1. Function and closure', function() {
             funArr[i] = function () { return i; };
 
         funArr.should.have.length(len);
-        (0 /*- ? */).should.be.equal( funArr[0]() );      // Oops!
-        (9 /*- ? */).should.be.equal( funArr[9]() );      // as above ;)
+        (10 /*- ? */).should.be.equal( funArr[0]() );      // Oops!
+        (10 /*- ? */).should.be.equal( funArr[9]() );      // as above ;)
 
     });
 
