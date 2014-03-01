@@ -54,7 +54,7 @@ describe('03.1. Function and closure', function() {
                 return a * p + b;
             };
 
-            return function() { return pf(); };
+            return pf;
         };
 
         var g = function(fun) {
